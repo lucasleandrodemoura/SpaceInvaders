@@ -94,7 +94,7 @@ int [ ] [ ] game = {
 	
     frame.repaint();
     try{
-      Thread.sleep(80);
+      Thread.sleep(120);
     }catch(java.lang.InterruptedException e){
     }
   }
@@ -127,7 +127,7 @@ int [ ] [ ] game = {
 
 	int width = getWidth();
     int height = getHeight();
-    g.setColor(Color.black);
+    g.setColor(Color.BLUE);
 
     for(int i=0; i < totalEnem; i++){
     	drawEnemy(inimigos[i].x, inimigos[i].y, g);
@@ -145,7 +145,7 @@ int [ ] [ ] game = {
     g.drawRect((platX+2)*5, (boardHeight-3)*5, 5, 5);
     g.fillRect((platX+2)*5, (boardHeight-3)*5, 5, 5);
     
-    g.setColor(Color.black);
+    g.setColor(Color.WHITE);
 
     if(gameOver){
       for(int i=0; i<game[0].length; i++){
