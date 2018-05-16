@@ -94,7 +94,7 @@ int [ ] [ ] game = {
 	
     frame.repaint();
     try{
-      Thread.sleep(120);
+      Thread.sleep(80);
     }catch(java.lang.InterruptedException e){
     }
   }
